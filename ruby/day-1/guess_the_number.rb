@@ -1,9 +1,17 @@
-secret = rand(10)
-guess = -1
-puts 'Guess a number between 1 and 10:'
-while guess != secret
-  guess = gets.to_i
-  puts 'Guess is to low. Choose another number:' if guess < secret
-  puts 'Guess is to high. Choose another number:' if guess > secret
-end
-puts 'Yay!! Well done.'
+#!/usr/local/ruby/bin/ruby
+
+puts "Find out the number I thought between 1 to 10!"
+guess = nil
+number = rand(10)
+(
+
+puts "enter the your guess: "
+guess = gets.to_i
+
+puts "Too big" if guess>number
+puts "Too small" if guess<number
+
+) while guess != number
+
+puts "You found it!" 
+
