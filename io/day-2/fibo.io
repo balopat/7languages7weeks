@@ -1,8 +1,7 @@
 
-fib := method(num,
-	if(num!=0,num + fib(num-1),0)
+fibRecursive := method(num,
+	if(num<=2, 1, fibRecursive(num-1) + fibRecursive(num-2),0)
 )
 
-fib(3)
-
+Range 1 to(10) foreach(v, fibRecursive(v) println)
 
