@@ -10,7 +10,7 @@ puts "index of \"Ruby\" in \"Hello, Ruby\" is ", "hello, Ruby".index("Ruby")
 
 puts "********************"
 
-(1..10).each{ puts "balopat"}
+10.times{ puts "balopat"}
 
 puts "********************"
 (1..10).each{|i| puts "This sentence is number #{i}"}
